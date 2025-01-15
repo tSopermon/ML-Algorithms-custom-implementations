@@ -67,6 +67,7 @@ labels = [ones(50, 1); -ones(50, 1)];
 % Splitting data into 2 subsets and suffling the data
 X1 = dataset(1:50, :);
 X2 = dataset(51:100, :);
+
 y1 = labels(1:50, :);
 y2 = labels(51:100, :);
 
@@ -77,6 +78,9 @@ idx2 = randperm(50);
 % Shuffling the data
 X1 = X1(idx1, :); 
 X2 = X2(idx2, :);
+
+y1 = y1(idx1, :);
+y2 = y2(idx2, :);
 
 %--------------------------------------------------------------------------
 % Cross Validation with k-folds-------------------------------------------------
