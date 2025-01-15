@@ -4,24 +4,19 @@
 This project compares the performance of three machine learning algorithms (Adaline, Logistic Regressor, and Perceptron) in solving binary classification problems. The analysis is conducted on three subsets of the Iris dataset:
 
 ## Repository Structure
-comparison-ml-algorithms/
-|
-├── README.md               # Project overview and instructions.
-├── main_code.m             # Main script for running the experiments.
-├── models/                 # MATLAB function files for each model.
-│   ├── AdalineNeuron.m
-│   ├── LogisticRegressorFunction.m
-│   ├── PerceptronFunction.m
-|
-├── data/                   # Input data files.
-│   ├── subset3.mat
-|
-├── results/                # Output results and visualizations.
-│   ├── evaluation_metrics.csv
-│   ├── mse_visualizations/
-│   ├── decision_boundaries/
-|
-└── LICENSE
+- **`/models/`**: MATLAB function files for each model.
+  - `AdalineNeuron.m`
+  - `LogisticRegressorFunction.m`
+  - `PerceptronFunction.m`
+- **`main_code.m`**: Main script for running the experiments.
+- **`/data/`**: # Input data files.
+  - **`subset3.mat`**: Marginally linearly separable data.
+- **`/results/`**: Output results and visualizations.
+  - **`evaluation_metrics.csv`**
+  - **`mse_visualizations/`**
+  - **`decision_boundaries/`**
+- **`README.md`**: Project overview and instructions.
+- **`LICENSE`**
 
 ### Iris dataset:
 1. **Subset #1**: Linearly separable data, manually preprocessed in the main code.
@@ -47,9 +42,6 @@ The project aims to:
 1. **Subset #1**: Two species from the Iris dataset (samples 1-100), encoded as +1/-1 using the 1st and 3rd features. This subset is manually preprocessed in the main code.
 2. **Subset #2**: Non-linearly separable subset of the Iris dataset (samples 51-150), encoded as +1/-1. This subset is manually preprocessed in the main code.
 3. **Subset #3**: Synthetic marginally linearly separable subset derived from Subset #1, provided as a separate file (`subset3.mat`).
-
-### Files
-* `subset3.mat`: Marginally linearly separable data.
 
 ## How to Run
 1. Clone the repository:
