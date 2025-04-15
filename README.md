@@ -1,4 +1,4 @@
-# Comparison of Three Machine Learning Algorithms in Binary Classification Problems
+# Custom implementation and comparison of 3 fundamental machine learning algorithms on MATLAB
 
 ## Project Overview
 This project compares the performance of three machine learning algorithms (Adaline, Logistic Regressor, and Perceptron) in solving binary classification problems. The analysis is conducted on three subsets of the Iris dataset:
